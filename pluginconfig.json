@@ -1,0 +1,11 @@
+{
+  "author": "毛华伟",
+  "date": "2020/01/03",
+  "name": "web插件开发",
+  "versionName": "dev-laster",
+  "versionCode": "1.0.0",
+  "desc": "登录插件，演示使用",
+  "iconLocal": "qrc:/images/image_icon.png",
+  "iconRemotely": "https://... 配置 cdn 地址",
+  "forceUpdate": "true"
+}

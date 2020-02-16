@@ -1,0 +1,85 @@
+﻿{
+  "configurations": [
+    {
+      "name": "x64-Release",
+      "generator": "Visual Studio 16 2019 Win64",
+      "configurationType": "Release",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "variables": [
+        {
+          "name": "Qt5Core_DIR",
+          "value": "C:/Qt/Qt5.14.1/5.14.1/msvc2017_64/lib/cmake/Qt5Core",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "Qt5Gui_DIR",
+          "value": "C:/Qt/Qt5.14.1/5.14.1/msvc2017_64/lib/cmake/Qt5Gui",
+          "type": "FILEPATH"
+        },
+        {
+          "name": " Qt5Network_DIR",
+          "value": "C:/Qt/Qt5.14.1/5.14.1/msvc2017_64/lib/cmake/Qt5Network",
+          "type": "FILEPATH"
+        },
+        {
+          "name": " Qt5QmlModels_DIR",
+          "value": "C:/Qt/Qt5.14.1/5.14.1/msvc2017_64/lib/cmakeQt5QmlModels",
+          "type": "FILEPATH"
+        },
+        {
+          "name": " Qt5Qml_DIR",
+          "value": "C:/Qt/Qt5.14.1/5.14.1/msvc2017_64/lib/cmake/Qt5Qml",
+          "type": "FILEPATH"
+        },
+        {
+          "name": " Qt5Quick_DIR",
+          "value": "C:/Qt/Qt5.14.1/5.14.1/msvc2017_64/lib/cmake/Qt5Quick",
+          "type": "FILEPATH"
+        },
+        {
+          "name": " Qt5_DIR",
+          "value": "C:/Qt/Qt5.14.1/5.14.1/msvc2017_64/lib/cmake/Qt5",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "folly_DIR",
+          "value": "D:/Local/vcpkg/installed/x64-windows/share/folly",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "glog_DIR",
+          "value": "D:/Local/vcpkg/installed/x64-windows/share/glog",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "gflags_DIR",
+          "value": "D:/Local/vcpkg/installed/x64-windows/share/gflags",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "yarpl_DIR",
+          "value": "D:/Local/libs/lib/cmake/yarpl",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "rsocket_DIR",
+          "value": "D:/Local/libs/lib/cmake/rsocket",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "rxcpp_DIR",
+          "value": "D:/Local/vcpkg/installed/x64-windows/share/rxcpp",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "rxqt_DIR",
+          "value": "D:/Local/vcpkg/installed/x64-windows/share/rxqt",
+          "type": "FILEPATH"
+        }
+      ]
+    }
+  ]
+}

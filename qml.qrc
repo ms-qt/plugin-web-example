@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/web/web.qml</file>
+        <file>html/web/index.html</file>
+    </qresource>
+</RCC>
