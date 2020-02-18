@@ -47,6 +47,7 @@ if (LINUX)
 endif (LINUX)
 
 find_package(Qt5 COMPONENTS Core Qml Quick WebEngine REQUIRED)
+find_package(ApppluginInterface)
 
 if (LIB)
     add_library(plugin-web SHARED
@@ -71,9 +72,9 @@ else ()
 endif ()
 
 target_link_libraries(plugin-web PRIVATE Qt5::Core Qt5::Qml Qt5::Quick Qt5::WebEngine)
-target_link_libraries(plugin-web PRIVATE app-plugininterface)
+target_link_libraries(plugin-web PRIVATE ApppluginInterface)
 
-target_compile_definitions(plugin-web PRIVATE PLUGINLOGIN_LIBRARY)
+target_compile_definitions(plugin-web PRIVATE PLUGINWEB_LIBRARY)
 
 set(pluginconfig.json)
 

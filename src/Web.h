@@ -18,7 +18,7 @@
 #include "apppluginterface/PluginMetaData.h"
 #include "Document.h"
 
-class PLUGINLOGIN_EXPORT Web : public IAppPluginInterface
+class PLUGINWEB_EXPORT Web : public IAppPluginInterface
 {
 Q_OBJECT
     Q_PLUGIN_METADATA(IID
