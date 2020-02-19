@@ -47,35 +47,28 @@ if (LINUX)
 endif (LINUX)
 
 find_package(Qt5 COMPONENTS Core Qml Quick WebEngine REQUIRED)
-find_package(ApppluginInterface)
 
+set(SRC
+        src/plugin-web_global.h
+        src/Web.cpp
+        src/Web.h
+        src/Document.cpp
+        src/Document.h
+        qml.qrc
+        image.qrc
+        )
 if (LIB)
-    add_library(plugin-web SHARED
-            src/plugin-web_global.h
-            src/Web.cpp
-            src/Web.h
-            src/Document.cpp
-            src/Document.h
-            qml.qrc
-            image.qrc
+    add_library(${PROJECT_NAME} SHARED
+            ${SRC}
             )
 else ()
-    add_executable(plugin-web
-            src/plugin-web_global.h
-            src/Web.cpp
-            src/Web.h
-            src/Document.cpp
-            src/Document.h
-            qml.qrc
-            image.qrc
-            src/Document.cpp src/Document.h)
+    add_executable(${PROJECT_NAME}
+            ${SRC})
 endif ()
 
-target_link_libraries(plugin-web PRIVATE Qt5::Core Qt5::Qml Qt5::Quick Qt5::WebEngine)
-target_link_libraries(plugin-web PRIVATE ApppluginInterface)
+target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::Core Qt5::Qml Qt5::Quick Qt5::WebEngine)
+target_link_libraries(${PROJECT_NAME} PRIVATE PluginInterface)
 
-target_compile_definitions(plugin-web PRIVATE PLUGINWEB_LIBRARY)
+target_compile_definitions(${PROJECT_NAME} PRIVATE PLUGINWEB_LIBRARY)
 
 set(pluginconfig.json)
-
-
