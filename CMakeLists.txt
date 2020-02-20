@@ -24,16 +24,13 @@ if (WIN32)
 endif (WIN32)
 
 if (APPLE)
-
 endif (APPLE)
 
 if (LINUX)
-
 endif (LINUX)
 
 
 if (WIN32)
-    # 输出路径
     include_directories("D:/Local/libs/include")
     link_directories("D:/Local/libs/lib")
 endif (WIN32)

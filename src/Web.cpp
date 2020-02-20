@@ -26,9 +26,7 @@ void Web::loader()
     qmlRegisterType<Document>("Document", 1, 0, "Document");
     QtWebEngine::initialize();
     const QUrl url(QStringLiteral("qrc:/qml/web/web.qml"));
-
     engine.load(url);
-
 
     // 如果需要TOKEN
     QJsonObject qJsonObject;
@@ -43,12 +41,10 @@ void Web::loader()
                                "\"version\""
                                "}");
 
-
     PluginMetaData *data = new PluginMetaData();
     QString str = QJsonDocument(qJsonObject).toJson();
     data->setData(&str);
     emit sendMessage(data);
-
 }
 
 void Web::receiveMessage(PluginMetaData *data)
