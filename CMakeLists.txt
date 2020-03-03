@@ -24,6 +24,8 @@ if (WIN32)
 endif (WIN32)
 
 if (APPLE)
+    SET(LIBRARY_OUTPUT_PATH /Users/maohuawei/project/app/qt/doper-dapp/cmake-build-debug/app.app/Contents/MacOS/plugins)
+
 endif (APPLE)
 
 if (LINUX)
@@ -35,8 +37,18 @@ if (WIN32)
     link_directories("D:/Local/libs/lib")
 endif (WIN32)
 
-if (APPLE)
 
+if (UNIX)
+
+    include_directories("/usr/local/include")
+    link_directories("/usr/local/lib")
+
+endif (UNIX)
+
+
+if (APPLE)
+    include_directories("/usr/local/include")
+    link_directories("/usr/local/lib")
 endif (APPLE)
 
 if (LINUX)

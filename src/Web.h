@@ -13,10 +13,16 @@
 #include <QJsonArray>
 #include <QJsonDocument>
 #include <QtWebEngine>
+
+#include <apppluginterface/IAppPluginInterface.h>
+#include <apppluginterface/PluginMetaData.h>
+
+
 #include "plugin-web_global.h"
-#include "apppluginterface/IAppPluginInterface.h"
-#include "apppluginterface/PluginMetaData.h"
 #include "Document.h"
+
+
+
 
 class PLUGINWEB_EXPORT Web : public IAppPluginInterface
 {
